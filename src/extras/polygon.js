@@ -4,7 +4,7 @@ export const polygon = function(n, m, d, r) {
     const res = [];
 
     for(let i = 0; i < n; i++)
-        res.push([math.cos(i+m, d*n)*r, math.sin(i+m, d*n)*r]);
+        res.push([math.cos(i*d+m, d*n)*r, math.sin(i*d+m, d*n)*r]);
 
     return res;
 }
