@@ -233,11 +233,11 @@ export default class CoordinateList {
 				row[j] = 0;
 		}
 
-		for(const key in this.dictionary)
-			newCoords.push(_project(this.dictionary[key]));
+		for(const key in this.dictPile.list)
+			newCoords.push(_project(this.dictPile.list[key]));
 		
-		this.dictionary = newCoords.dictionary;
-		console.log(newCoords.dictionary);
+		this.dictPile = newCoords.dictPile;
+		console.log(newCoords.dictPile);
 
 		function _project(point) {
 			const res = [];
