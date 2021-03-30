@@ -237,7 +237,6 @@ export default class CoordinateList {
 			newCoords.push(_project(this.dictPile.list[key]));
 		
 		this.dictPile = newCoords.dictPile;
-		console.log(newCoords.dictPile);
 
 		function _project(point) {
 			const res = [];
